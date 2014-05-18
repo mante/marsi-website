@@ -1,0 +1,150 @@
+body {
+  background-color: #30233a;
+  color: #b3b3b3;
+  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 12px
+}
+
+.name{
+  width: 640px;
+  font-size: 58px;
+  margin: 0;
+  background-image: url('images/silhouette.png');
+  background-repeat: no-repeat;
+  background-position: 100% -140%;
+}
+
+.tagline{
+  font-size: 16px;
+  margin: -10px 3px 0;
+  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: 300;
+
+}
+
+.ux{
+  color: #1b1523;
+  margin: 0 15px;
+}
+
+.wrapper{
+  margin: 100px auto;
+  width: 600px;
+}
+
+.links {
+  margin: 0 auto;
+
+}
+
+.me {
+  background-image: url('images/link-me.png');
+  display: inline-block;
+  margin-right: 26px;
+  background-repeat: none;
+  display: block;
+  height: 51px;
+  text-decoration: none;
+  text-align: center;
+  width: 51px;
+  color: #b3b3b3;
+}
+
+.portfolio {
+  background-image: url('images/link-portfolio.png');
+  display: inline-block;
+  margin-right: 26px;
+  background-repeat: none;
+  display: block;
+  height: 51px;
+  text-decoration: none;
+  text-align: center;
+  width: 51px;
+  color: #b3b3b3;
+}
+
+.email {
+  background-image: url('images/link-email.png');
+  display: inline-block;
+  margin-right: 26px;
+  background-repeat: none;
+  display: block;
+  height: 51px;
+  text-decoration: none;
+  text-align: center;
+  width: 51px;
+  color: #b3b3b3;
+}
+
+.twitter {
+  background-image: url('images/link-twitter.png');
+  display: inline-block;
+  margin-right: 26px;
+  background-repeat: none;
+  display: block;
+  height: 51px;
+  text-decoration: none;
+  text-align: center;
+  width: 51px;
+  color: #b3b3b3;
+}
+
+.linkedin {
+  background-image: url('images/link-linkedin.png');
+  display: inline-block;
+  margin-right: 26px;
+  background-repeat: none;
+  display: block;
+  height: 51px;
+  text-decoration: none;
+  text-align: center;
+  width: 51px;
+  color: #b3b3b3;
+}
+
+.me:hover {
+  background-position: 0 -60px;
+}
+
+.me:hover > .title {
+  opacity: 1;
+}
+
+.portfolio:hover {
+  background-position: 0 -60px;
+}
+
+.portfolio:hover > .title {
+  opacity: 1;
+}
+
+.email:hover {
+  background-position: 0 -60px;
+}
+
+.email:hover > .title {
+  opacity: 1;
+}
+
+.twitter:hover {
+  background-position: 0 -60px;
+}
+
+.twitter:hover > .title {
+  opacity: 1;
+}
+
+.linkedin:hover {
+  background-position: 0 -60px;
+}
+
+.linkedin:hover > .title {
+  opacity: 1;
+}
+
+.title {
+  display: block;
+  padding-top: 60px;
+  opacity: 0;
+}
+
