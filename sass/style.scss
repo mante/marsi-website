@@ -44,15 +44,24 @@ body {
     display: table-row;
 
     li {
-      text-align: center;
       width: 20%;
       display: table-cell;
 
       a {
         background-position: top center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 51px;
+        text-decoration: none;
+        text-align: center;
+        color: #b3b3b3;
 
         &:hover {
           background-position-y: -60px;
+
+          .title {
+            opacity: 1;
+          }
         }
       }
     }
@@ -61,87 +70,22 @@ body {
 
 .me {
   background-image: url('images/link-me.png');
-  display: inline-block;
-  // margin-right: 26px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  // width: 51px;
-  color: #b3b3b3;
 }
 
 .portfolio {
   background-image: url('images/link-portfolio.png');
-  display: inline-block;
-  // margin-right: 26px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  // width: 51px;
-  color: #b3b3b3;
 }
 
 .email {
   background-image: url('images/link-email.png');
-  display: inline-block;
-  // margin-right: 26px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  // width: 51px;
-  color: #b3b3b3;
 }
 
 .twitter {
   background-image: url('images/link-twitter.png');
-  display: inline-block;
-  // margin-right: 26px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  // width: 51px;
-  color: #b3b3b3;
 }
 
 .linkedin {
   background-image: url('images/link-linkedin.png');
-  display: inline-block;
-  // margin-right: 26px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  // width: 51px;
-  color: #b3b3b3;
-}
-
-.me:hover > .title {
-  opacity: 1;
-}
-
-.portfolio:hover > .title {
-  opacity: 1;
-}
-
-.email:hover > .title {
-  opacity: 1;
-}
-
-.twitter:hover > .title {
-  opacity: 1;
-}
-
-.linkedin:hover > .title {
-  opacity: 1;
 }
 
 .title {

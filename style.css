@@ -48,78 +48,35 @@ body {
     padding: 0;
     display: table-row; }
     .links-wrapper .links li {
-      text-align: center;
       width: 20%;
       display: table-cell; }
       .links-wrapper .links li a {
-        background-position: top center; }
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 51px;
+        text-decoration: none;
+        text-align: center;
+        color: #b3b3b3; }
         .links-wrapper .links li a:hover {
           background-position-y: -60px; }
+          .links-wrapper .links li a:hover .title {
+            opacity: 1; }
 
 .me {
-  background-image: url("images/link-me.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  color: #b3b3b3; }
+  background-image: url("images/link-me.png"); }
 
 .portfolio {
-  background-image: url("images/link-portfolio.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  color: #b3b3b3; }
+  background-image: url("images/link-portfolio.png"); }
 
 .email {
-  background-image: url("images/link-email.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  color: #b3b3b3; }
+  background-image: url("images/link-email.png"); }
 
 .twitter {
-  background-image: url("images/link-twitter.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  color: #b3b3b3; }
+  background-image: url("images/link-twitter.png"); }
 
 .linkedin {
-  background-image: url("images/link-linkedin.png");
-  display: inline-block;
-  background-repeat: no-repeat;
-  display: block;
-  height: 51px;
-  text-decoration: none;
-  text-align: center;
-  color: #b3b3b3; }
-
-.me:hover > .title {
-  opacity: 1; }
-
-.portfolio:hover > .title {
-  opacity: 1; }
-
-.email:hover > .title {
-  opacity: 1; }
-
-.twitter:hover > .title {
-  opacity: 1; }
-
-.linkedin:hover > .title {
-  opacity: 1; }
+  background-image: url("images/link-linkedin.png"); }
 
 .title {
   display: block;
