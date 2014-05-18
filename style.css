@@ -6,7 +6,7 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'Edmonsans';
+  font-family: 'Edmondsans';
   src: url("fonts/edmondsans-regular-webfont.eot");
   src: url("fonts/edmondsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/edmondsans-regular-webfont.woff") format("woff"), url("fonts/edmondsans-regular-webfont.ttf") format("truetype"), url("fonts/edmondsans-regular-webfont.svg#edmondsans_regularregular") format("svg");
   font-weight: normal;
@@ -14,19 +14,19 @@
 
 body {
   background-color: #30233a;
+  font-family: 'Edmondsans', 'Open Sans', 'Helvetica', sans-serif;
   color: #b3b3b3;
-  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
   font-size: 12px; }
 
 .name {
-  width: 640px;
-  font-size: 58px;
+  padding-top: 20px;
+  font-family: 'Edmondsansbold', 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 54px;
   margin: 0; }
 
 .tagline {
   font-size: 16px;
   margin: -10px 3px 0;
-  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
   font-weight: 300; }
 
 .ux {

@@ -2,21 +2,21 @@
 
 body {
   background-color: #30233a;
+  font-family: 'Edmondsans', 'Open Sans', 'Helvetica', sans-serif;
   color: #b3b3b3;
-  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
   font-size: 12px
 }
 
-.name{
-  width: 640px;
-  font-size: 58px;
+.name {
+  padding-top: 20px;
+  font-family: 'Edmondsansbold', 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 54px;
   margin: 0;
 }
 
-.tagline{
+.tagline {
   font-size: 16px;
   margin: -10px 3px 0;
-  font-family: 'Edmonsans', 'Open Sans', 'Helvetica', sans-serif;
   font-weight: 300;
 
 }
