@@ -108,8 +108,9 @@ header:after {
       .links-wrapper .links li a {
         background-position: top center;
         background-repeat: no-repeat;
+        background-size: 51px;
         display: block;
-        height: 51px;
+        height: 52px;
         width: 51px;
         text-decoration: none;
         text-align: center;
@@ -130,16 +131,16 @@ header:after {
           opacity: 1; } }
 
 .me {
-  background-image: url("images/link-me.png"); }
+  background-image: url("images/link-me.svg"); }
 
 .portfolio {
-  background-image: url("images/link-portfolio.png"); }
+  background-image: url("images/link-portfolio.svg"); }
 
 .email {
-  background-image: url("images/link-email.png"); }
+  background-image: url("images/link-email.svg"); }
 
 .twitter {
-  background-image: url("images/link-twitter.png"); }
+  background-image: url("images/link-twitter.svg"); }
 
 .linkedin {
-  background-image: url("images/link-linkedin.png"); }
+  background-image: url("images/link-linkedin.svg"); }
