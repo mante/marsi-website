@@ -1,4 +1,22 @@
 @import "fonts";
+$breakpoint: 600px;
+@mixin desktop {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
 
 body {
   background-color: #30233a;
@@ -7,54 +25,127 @@ body {
   font-size: 12px
 }
 
+header {
+  @include clearfix;
+}
+
+.name-tagline {
+  @include desktop {
+    float: left;
+  }
+}
+
+.ux-wrapper {
+  text-align: center;
+  @include desktop {
+    text-align: left;
+    float: right;
+  }
+}
+
 .name {
-  padding-top: 20px;
   font-family: 'Edmondsansbold', 'Open Sans', 'Helvetica', sans-serif;
-  font-size: 54px;
+  font-size: 30px;
   margin: 0;
+  padding: 0 20px;
+  @include desktop {
+    font-size: 54px;
+    margin: 0;
+    padding: 20px 0 0;
+  }
 }
 
 .tagline {
-  font-size: 16px;
-  margin: -10px 3px 0;
-  font-weight: 300;
-
+  font-size: 14px;
+  margin: 0;
+  padding: 0 20px;
+  @include desktop {
+    font-size: 16px;
+    margin: -10px 3px 0;
+    font-weight: 300;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .ux {
+  font-family: 'Edmondsansbold', 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 120px;
+  line-height: 1;
   color: #1b1523;
-  margin: 0 15px;
+  padding: 0 20px;
+  text-align: center;
+
+  &:after {
+    font-family: 'icons';
+    content: "\e600";
+    padding-left: 8px;
+  }
+
+  @include desktop {
+    float: right;
+    font-size: 54px;
+    margin-right: 30px;
+    padding: 20px 0;
+    text-align: left;
+  }
 }
 
 .wrapper {
-  margin: 100px auto;
-  max-width: 600px;
-  background-image: url('images/silhouette.png');
-  background-repeat: no-repeat;
-  background-position: top right;
+  max-width: 300px;
+  margin: 65px auto;
+  text-align: center;
+
+  @include desktop {
+    max-width: 600px;
+    margin: 100px auto;
+  }
 }
 
 .links-wrapper {
-  margin: 20px auto;
+  margin: 0 auto;
   display: table;
-  width: 360px;
+  padding: 20px 10px;
 
   .links {
+    width: 100%;
     padding: 0;
     display: table-row;
 
     li {
       width: 20%;
       display: table-cell;
+      padding: 0 2px;
 
       a {
         background-position: top center;
         background-repeat: no-repeat;
         display: block;
         height: 51px;
+        width: 51px;
         text-decoration: none;
         text-align: center;
         color: #b3b3b3;
+
+      }
+    }
+
+    .title {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    width: 360px;
+    padding: 20px 0;
+
+    .links {
+      a {
+        .title {
+          display: block;
+          padding-top: 60px;
+          opacity: 0;
+        }
 
         &:hover {
           background-position-y: -60px;
@@ -69,27 +160,21 @@ body {
 }
 
 .me {
-  background-image: url('images/link-me.png');
+  background-image: url('images/link-me.svg');
 }
 
 .portfolio {
-  background-image: url('images/link-portfolio.png');
+  background-image: url('images/link-portfolio.svg');
 }
 
 .email {
-  background-image: url('images/link-email.png');
+  background-image: url('images/link-email.svg');
 }
 
 .twitter {
-  background-image: url('images/link-twitter.png');
+  background-image: url('images/link-twitter.svg');
 }
 
 .linkedin {
-  background-image: url('images/link-linkedin.png');
-}
-
-.title {
-  display: block;
-  padding-top: 60px;
-  opacity: 0;
+  background-image: url('images/link-linkedin.svg');
 }
