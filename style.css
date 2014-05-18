@@ -130,16 +130,16 @@ header:after {
           opacity: 1; } }
 
 .me {
-  background-image: url("images/link-me.svg"); }
+  background-image: url("images/link-me.png"); }
 
 .portfolio {
-  background-image: url("images/link-portfolio.svg"); }
+  background-image: url("images/link-portfolio.png"); }
 
 .email {
-  background-image: url("images/link-email.svg"); }
+  background-image: url("images/link-email.png"); }
 
 .twitter {
-  background-image: url("images/link-twitter.svg"); }
+  background-image: url("images/link-twitter.png"); }
 
 .linkedin {
-  background-image: url("images/link-linkedin.svg"); }
+  background-image: url("images/link-linkedin.png"); }
